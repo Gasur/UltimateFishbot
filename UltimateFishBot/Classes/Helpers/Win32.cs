@@ -79,7 +79,7 @@ namespace UltimateFishBot.Classes.Helpers
 
         public static Rectangle GetWowRectangle()
         {
-            IntPtr Wow = FindWindow("GxWindowClass", "World Of Warcraft");
+            IntPtr Wow = FindWindow("GxWindowClass", "월드 오브 워크래프트");
             Rect Win32ApiRect = new Rect();
             GetWindowRect(Wow, ref Win32ApiRect);
             Rectangle myRect = new Rectangle();
